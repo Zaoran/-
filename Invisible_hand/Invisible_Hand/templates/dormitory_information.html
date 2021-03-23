@@ -1,0 +1,18 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+
+<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<META HTTP-EQUIV="expires" CONTENT="0">
+
+{% load static %}
+<center>
+<h1>大二课程表</h1>
+<img src="{% static 'images/class_schedule_2.jpg' %}" alt="">
+<h1>大二实验课</h1>
+<img src="{% static 'images/experiment_schedue_2.jpg' %}" alt="">
+
+
+<form action="/dormitory/input/" method="get">
+    <input type="submit" value="返回！">
+</form>
+</center>

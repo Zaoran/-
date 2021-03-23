@@ -1,0 +1,30 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<META HTTP-EQUIV="expires" CONTENT="0">
+
+<center>
+<h1>健康数据</h1>
+<h2>医疗信息输入</h2>
+<h3>录入数据：输入数据，若没有某项数据则该项空白，点击“输入/查看”。</h3>
+<h3>查看数据：点击“输入/查看”。</h3>
+<h3>输入错误：微信联系海海。</h3>
+<form action="/health/output/" method="get">
+    <p>请输入日期（格式：2021-01-01）:</p>
+    <input type="text" name="date">
+	<p>请输入白细胞计数（参考值：3.5～9.5）:</p>
+    <input type="text" name="leukocyte">
+    <p>请输入血小板总数（参考值：100～350）:</p>
+    <input type="text" name="platelet">
+    <p>请输入中性粒细胞绝对值（参考值：1.8～6.3）:</p>
+    <input type="text" name="neutrophil">
+    <p>请输入糖类抗原19—9（参考值：0.00～35.00）:</p>
+    <input type="text" name="CA199">
+    <p>请输入糖类抗原125（参考值：0.00～35.00）:</p>
+    <input type="text" name="CA125">
+    <p>请输入癌胚抗原（参考值：0.00～5.00）:</p>
+    <input type="text" name="CEA">
+    <br><br>
+    <input type="submit" value="输入/查看">
+</form>
+</center>

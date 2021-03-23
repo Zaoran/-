@@ -1,0 +1,25 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<META HTTP-EQUIV="expires" CONTENT="0">
+
+<center>
+<h1>无形的手</h1>
+<h2>股票信息搜索</h2>
+<form action="/search/output/" method="get">
+	<p>请输入股票代码(默认值:000001):</p>
+    <input type="text" name="number">
+    <p>请输入开始日期:(默认值：2020-01-01):</p>
+    <input type="text" name="start">
+    <p>请输入结束日期:(默认值：2020-12-31):</p>
+    <input type="text" name="end">
+    <br><br>
+    <input type="submit" value="搜索">
+</form>
+
+<form action="/search/FreshNameNumber/" method="get">
+	<br><br><br><br><br><br>
+    <input type="submit" value="更新数据库">
+    <p>更新数据时间较久，请耐心等候。</p>
+</form>
+</center> 

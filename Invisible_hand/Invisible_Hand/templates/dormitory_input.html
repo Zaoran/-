@@ -1,0 +1,42 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<META HTTP-EQUIV="expires" CONTENT="0">
+
+<center>
+<h1>荔园11栋220宿舍值日安排</h1>
+<h2>当前值日信息</h2>
+
+{%if water == 1%}
+<h3>当前打水员：陈雨箫</h3>
+{% elif water == 2%}
+<h3>当前打水员：曾浩然</h3>
+{% elif water == 3%}
+<h3>当前打水员：赵伟龙</h3>
+{% elif water == 4%}
+<h3>当前打水员：方渲钧</h3>
+{% else %}
+<h3>当前打水员：胡文韬</h3>
+{% endif %}
+<form action="/dormitory/water_output/" method="get">
+    <input type="submit" value="下一位！">
+</form>
+
+{%if rubbish == 1%}
+<h3>当前倒垃圾员：陈雨箫</h3>
+{% elif rubbish == 2%}
+<h3>当前倒垃圾员：曾浩然</h3>
+{% elif rubbish == 3%}
+<h3>当前倒垃圾员：赵伟龙</h3>
+{% elif rubbish == 4%}
+<h3>当前倒垃圾员：方渲钧</h3>
+{% else %}
+<h3>当前倒垃圾员：胡文韬</h3>
+{% endif %}
+<form action="/dormitory/rubbish_output/" method="get">
+    <input type="submit" value="下一位！">
+</form>
+
+<form action="/dormitory/information/" method="get">
+    <input type="submit" value="查看常用信息">
+</form>
